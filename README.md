@@ -5,6 +5,6 @@ A new work-in-progress Pokémon speed calculator. Never get outsped (by surprise
 # WORK IN PROGRESS
 
   * Not fully functional yet
-  * Not full styled yet
+  * Not fully styled yet
 
 ```
