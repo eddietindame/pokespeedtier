@@ -1,0 +1,29 @@
+input {
+    float: right;
+    width: 50px;
+}
+
+select {
+    float: right;
+}
+
+label {
+    width: 30%;
+    float: left;
+}
+
+button {
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}

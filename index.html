@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéSpeedTier</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <header class="column large-12 text-center">
+        <h1>PokéSpeedTier</h1>
+      </header>
+    </div>
+    <div class="row">
+      <div id="pkmn_1" class="pokepanel pkmn column large-6 medium-6 small-12">
+        <form name="pkmn_1" action="#">
+          <label>Pokémon #1 </label>
+          <select id="pkmnSelect_1"></select>
+          <div id="IV">
+            <label>IV</label>
+            <input id="iv_1" type="text">
+          </div>
+          <div id="EV">
+            <label>EV</label>
+            <input id="ev_1" type="text">
+          </div>
+          <div id="Level">
+            <label>Level</label>
+            <input id="level_1" type="text">
+          </div>
+          <label>Nature</label>
+          <select id="nature_1" class="nature">
+            <option value="+">+</option>
+            <option value="N/A" selected="">N/A</option>
+            <option value="-">-</option>
+          </select>
+          <label>Ability</label>
+          <select id="ability_1" class="ability">
+            <option value="N/A" selected="">N/A</option>
+            <option value="unburden">Unburden</option>
+            <option value="chlorophyl">Chlorophyl</option>
+            <option value="swiftSwim">Swift swim</option>
+            <option value="quickFeet">Quick Feet</option>
+          </select>
+          <div id="para">
+            <label>Paralysis</label>
+            <input id="para_1" type="checkbox" class="para">
+          </div>
+          <div id="tailwind">
+            <label>Tailwind</label>
+            <input id="tailw_1" type="checkbox" class="tailw">
+          </div>
+          <div id="item"></div>
+          <label>Item</label>
+          <select id="item_1" class="item">
+            <option value="N/A">N/A</option>
+            <option value="Scarf">Choice Scarf</option>
+            <option value="Power">Power Item</option>
+            <option value="Macho">Macho Brace</option>
+            <option value="Iron">Iron Ball</option>
+          </select>
+          <div id="modifier">
+            <label>Modifier</label>
+            <select id="modifier_1" class="modifier">
+              <option value="+6">+6</option>
+              <option value="+5">+5</option>
+              <option value="+4">+4</option>
+              <option value="+3">+3</option>
+              <option value="+2">+2</option>
+              <option value="+1">+1</option>
+              <option value="N/A" selected="">N/A</option>
+              <option value="-1">-1</option>
+              <option value="-2">-2</option>
+              <option value="-3">-3</option>
+              <option value="-4">-4</option>
+              <option value="-5">-5</option>
+              <option value="-6">-6</option>
+            </select>
+          </div>
+          <div id="base">
+            <label>Base:</label>
+            <input id="base_1" readonly="readonly" class="base">
+          </div>
+          <div id="speed">
+            <label>Speed:</label>
+            <input id="speed_1" readonly="readonly" class="speed">
+          </div>
+        </form>
+      </div>
+      <div id="pkmn_2" class="pokepanel pkmn column large-6 medium-6 small-12">
+        <form name="pkmn_2" action="#">
+          <label>Pokémon #2</label>
+          <select id="pkmnSelect_2"></select>
+          <div id="IV">
+            <label>IV</label>
+            <input id="iv_2" type="text">
+          </div>
+          <div id="EV">
+            <label>EV</label>
+            <input id="ev_2" type="text">
+          </div>
+          <div id="Level">
+            <label>Level</label>
+            <input id="level_2" type="text">
+          </div>
+          <label>Nature</label>
+          <select id="nature_2" class="nature">
+            <option value="+">+</option>
+            <option value="N/A" selected="">N/A</option>
+            <option value="-">-</option>
+          </select>
+          <label>Ability</label>
+          <select id="ability_2" class="ability">
+            <option value="N/A" selected="">N/A</option>
+            <option value="unburden">Unburden</option>
+            <option value="chlorophyl">Chlorophyl</option>
+            <option value="swiftSwim">Swift swim</option>
+            <option value="quickFeet">Quick Feet</option>
+          </select>
+          <div id="para">
+            <label>Paralysis</label>
+            <input id="para_2" type="checkbox" class="para">
+          </div>
+          <div id="tailwind">
+            <label>Tailwind</label>
+            <input id="tailw_2" type="checkbox" class="tailw">
+          </div>
+          <div id="item"></div>
+          <label>Item</label>
+          <select id="item_2" class="item">
+            <option value="N/A">N/A</option>
+            <option value="Scarf">Choice Scarf</option>
+            <option value="Power">Power Item</option>
+            <option value="Macho">Macho Brace</option>
+            <option value="Iron">Iron Ball</option>
+          </select>
+          <div id="modifier">
+            <label>Modifier</label>
+            <select id="modifier_2" class="modifier">
+              <option value="+6">+6</option>
+              <option value="+5">+5</option>
+              <option value="+4">+4</option>
+              <option value="+3">+3</option>
+              <option value="+2">+2</option>
+              <option value="+1">+1</option>
+              <option value="N/A" selected="">N/A</option>
+              <option value="-1">-1</option>
+              <option value="-2">-2</option>
+              <option value="-3">-3</option>
+              <option value="-4">-4</option>
+              <option value="-5">-5</option>
+              <option value="-6">-6</option>
+            </select>
+          </div>
+          <div id="base">
+            <label>Base:</label>
+            <input id="base_2" readonly="readonly" class="base">
+          </div>
+          <div id="speed">
+            <label>Speed:</label>
+            <input id="speed_2" readonly="readonly" class="speed">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column large-12">
+        <form id="output" name="output" action="#">
+          <button id="submit" onclick="updateFields()">Submit</button>
+          <input id="outputBox">
+          <button id="reset" onclick="restart()">Reset</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/pokedex.js"></script>
+    <script src="js/pokemon.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

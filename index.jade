@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title PokéSpeedTier
+        link(rel='stylesheet', href='stylesheets/app.css')
+        script(src="bower_components/modernizr/modernizr.js")
+        script(src="bower_components/jquery/dist/jquery.js")
+        
+    body()
+        .row
+            header.column.large-12.text-center
+                h1 PokéSpeedTier
+        .row
+            .pokepanel#pkmn_1.pkmn.column.large-6.medium-6.small-12
+                include includes/pokepanel_1
+            .pokepanel#pkmn_2.pkmn.column.large-6.medium-6.small-12
+                include includes/pokepanel_2
+        .row
+            .column.large-12
+                include includes/result
+                
+    
+        script(src="js/pokedex.js")
+        script(src="js/pokemon.js")
+        script(src="js/app.js")
+        
