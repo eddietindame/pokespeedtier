@@ -8,3 +8,4 @@ A new work-in-progress Pokémon speed calculator. Never get outsped (by surprise
   * Not fully styled yet
 
 ```
+[URL]http://pokespeedtier.kissr.com
