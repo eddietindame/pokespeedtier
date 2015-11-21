@@ -1,6 +1,8 @@
 # PokéSpeedTier
 
 A new work-in-progress Pokémon speed calculator. Never get outsped (by surprise) again!
+
+Originally written in Java - I had it lose to completetion but decided to re-write as an ES6 web-app.
 ```
 # WORK IN PROGRESS
 
@@ -15,8 +17,5 @@ A new work-in-progress Pokémon speed calculator. Never get outsped (by surprise
   
   * Pokémon and modifier selectors functioning
   * Speed calculates correctly (except for above)
-  
 ```
 [URL]http://pokespeedtier.kissr.com
-
-Originally written in Java - I had it lose to completetion but decided to re-write as an ES6 web-app.
