@@ -22,4 +22,4 @@ Originally written in Java - I had it close to completetion but decided to re-wr
   * Pokémon and modifier selectors functioning
   * Speed calculates correctly (except for above)
 ```
-[http://pokespeedtier.kissr.com]http://pokespeedtier.kissr.com
+[pokespeedtier.kissr.com]pokespeedtier.kissr.com
