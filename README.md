@@ -2,7 +2,7 @@
 
 A new work-in-progress Pokémon speed calculator. Never get outsped (by surprise) again!
 
-Originally written in Java - I had it lose to completetion but decided to re-write as an ES6 web-app.
+Originally written in Java - I had it close to completetion but decided to re-write as an ES6 web-app.
 ```
 # WORK IN PROGRESS
 
@@ -14,9 +14,12 @@ Originally written in Java - I had it lose to completetion but decided to re-wri
   * Not fully styled yet
   * Pokédex not fully implemented (already mapped in Java, need to copypasta)
   * Sprite-sheet not implemented  ( ^^ ditto ^^ )
-  * PHP needs to be implemented for dry, modular markup
+  * PHP could be implemented for modular markup
+  * Experimenting with custom HTML elements
+  
+  * Considering implementing [http://pokeapi.co/]Pokéapi
   
   * Pokémon and modifier selectors functioning
   * Speed calculates correctly (except for above)
 ```
-[URL]http://pokespeedtier.kissr.com
+[http://pokespeedtier.kissr.com]http://pokespeedtier.kissr.com
