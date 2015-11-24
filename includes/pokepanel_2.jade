@@ -1,47 +1,47 @@
-form(name='pkmn_2', action='#')
-    label Pokémon #2
-    select#pkmnSelect_2
-
-    #IV
+form(class='pokepanel' name='pkmn_2', action='#')
+    .wide-select
+        label Pokémon #1
+        select#pkmnSelect_2
+    .box-input
         label IV
-        input#iv_2(type="text")
-    #EV
+        input(class="box-input__input" id="iv_2" type='number')
+    .box-input
         label EV
-        input#ev_2(type="text")
-    #Level
+        input(class="box-input__input" id="ev_2" type='number')
+    .box-input
         label Level
-        input#level_2(type="text")
-    
-    label Nature
-    select#nature_2.nature
-        option(value='+') +
-        option(value='N/A', selected='') N/A
-        option(value='-') -
-    
-    label Ability
-    select#ability_2.ability
-        option(value='N/A', selected='') N/A
-        option(value='unburden') Unburden
-        option(value='chlorophyl') Chlorophyl
-        option(value='swiftSwim') Swift swim
-        option(value='quickFeet') Quick Feet
-    #para
+        input(class="box-input__input" id="level_2" type='number')
+    .wide-select
+        label Nature
+        select#nature_2
+            option(value='+') +
+            option(value='N/A', selected='') N/A
+            option(value='-') -
+    .wide-select
+        label Ability
+        select#ability_2
+            option(value='N/A', selected='') N/A
+            option(value='unburden') Unburden
+            option(value='chlorophyl') Chlorophyl
+            option(value='swiftSwim') Swift swim
+            option(value='quickFeet') Quick Feet
+    .check-select
         label Paralysis
-        input#para_2.para(type='checkbox')
-    #tailwind
+        input(class='check-select__input' id='para_2' type='checkbox')
+    .check-select
         label Tailwind
-        input#tailw_2.tailw(type='checkbox')
-    #item
-    label Item
-    select#item_2.item
-        option(value='N/A') N/A
-        option(value='Scarf') Choice Scarf
-        option(value='Power') Power Item
-        option(value='Macho') Macho Brace
-        option(value='Iron') Iron Ball
-    #modifier
+        input(class='check-select__input' id='tailw_2' type='checkbox')
+    .wide-select
+        label Item
+        select#item_2
+            option(value='N/A') N/A
+            option(value='Scarf') Choice Scarf
+            option(value='Power') Power Item
+            option(value='Macho') Macho Brace
+            option(value='Iron') Iron Ball
+    .wide-select
         label Modifier
-        select#modifier_2.modifier
+        select#modifier_2
             option(value='+6') +6
             option(value='+5') +5
             option(value='+4') +4
@@ -49,15 +49,15 @@ form(name='pkmn_2', action='#')
             option(value='+2') +2
             option(value='+1') +1
             option(value='N/A', selected='') N/A
-            option(value='-1') -1
+            option(value='-1') -1_!_
             option(value='-2') -2
             option(value='-3') -3
             option(value='-4') -4
             option(value='-5') -5
             option(value='-6') -6
-    #base
-        label Base:
-        input#base_2.base(readonly='readonly')
-    #speed
-        label Speed:
-        input#speed_2.speed(readonly='readonly')
+    .box-input
+        label Base
+        input(id='base_2' type='number' readonly='readonly')
+    .box-input
+        label Speed
+        input(id='speed_2' type='number' readonly='readonly')

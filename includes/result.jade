@@ -1,8 +1,9 @@
-form#output(name='output', action='#')
-    button#submit(onclick='updateFields()') Submit
-    input#outputBox
-    button#reset(onclick='restart()') Reset
-    .footernote 
-        | Find the Git repository 
-        a(href='https://github.com/eddietindame/pokespeedtier.git') here
-        | .
+form(class='output' name='output', action='#')
+    input.output__text-box#outputBox
+    .button-group
+        button.output__button(onclick='updateFields()') Submit
+        button.output__button(onclick='restart()') Reset
+.footnote 
+    | Find the Git repository 
+    a(href='https://github.com/eddietindame/pokespeedtier.git') here
+    | .

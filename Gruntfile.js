@@ -1,6 +1,17 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		// babel: {
+		// 	options: {
+		// 		sourceMap: true,
+		// 		// presets: ['es2015']
+		// 	},
+		// 	dist: {
+		// 		files: {
+		// 			'js/app.js': 'js/_app.js'
+		// 		}
+		// 	}
+		// },
 		compass: {
 			dist: {
 				options: {
@@ -27,8 +38,8 @@ module.exports = function(grunt) {
 		watch: {
 			options: {livereload: true},
 			css: {
-				files: ['**/*.scss','**/*.jade'],
-				tasks: ['compass','jade']
+				files: [/*'js/*.js',*/ '**/*.scss','**/*.jade'],
+				tasks: [/*'babel',*/ 'compass','jade']
 			}
 		},
 		express:{
@@ -53,6 +64,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-express');
 	grunt.loadNpmTasks('grunt-open');
+	// grunt.loadNpmTasks('grunt-babel');
 	grunt.registerTask('server', ['express','open','watch']);
 	grunt.registerTask('default', ['server']);
 }

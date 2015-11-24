@@ -9875,113 +9875,91 @@ th.hide-for-touch {
   }
 }
 /* line 1, ../scss/cats/_base.scss */
-input {
-  float: right;
-  width: 50px;
-}
-
-/* line 6, ../scss/cats/_base.scss */
-select {
-  float: right;
-}
-
-/* line 10, ../scss/cats/_base.scss */
-label {
-  width: 30%;
-  float: left;
-}
-
-/* line 15, ../scss/cats/_base.scss */
 button {
   text-align: center;
   width: 100px;
   margin: 0 auto;
 }
 
-/* line 21, ../scss/cats/_base.scss */
+/* line 7, ../scss/cats/_base.scss */
 form {
   display: flex;
   flex-direction: column;
 }
 
-/* line 26, ../scss/cats/_base.scss */
+/* line 21, ../scss/cats/_layout.scss */
+#header {
+  text-align: center;
+}
+
+/* line 25, ../scss/cats/_layout.scss */
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 auto;
 }
 
-/* line 1, ../scss/cats/_layout.scss */
-#para,
-#tailwind {
+/* line 35, ../scss/cats/_layout.scss */
+.pokepanel {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/* line 6, ../scss/cats/_layout.scss */
-#para input,
-#tailwind input {
-  width: auto;
+  height: 100%;
+  margin: 1%;
+  width: 100%;
+  background-color: #e0dcdc;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-/* line 11, ../scss/cats/_layout.scss */
-#IV,
-#EV,
-#Level,
-#base,
-#speed {
+/* line 49, ../scss/cats/_layout.scss */
+.button-group {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-/* line 19, ../scss/cats/_layout.scss */
-#IV input,
-#EV input,
-#Level input,
-#base input,
-#speed input {
+
+/* line 53, ../scss/cats/_layout.scss */
+.footnote {
+  width: 100%;
   text-align: center;
-  width: 50px;
+  margin: 20px auto;
+}
+
+/* line 1, ../scss/cats/_module.scss */
+.box-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 6, ../scss/cats/_module.scss */
+.box-input__input {
   height: 30px;
   padding: 0;
   margin: 0;
 }
 
-/* line 28, ../scss/cats/_layout.scss */
-#outputBox {
-  margin: 10px auto;
-  width: 300px;
-  text-align: center;
+/* line 13, ../scss/cats/_module.scss */
+.check-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-/* line 34, ../scss/cats/_layout.scss */
-#header {
-  text-align: center;
-}
-
-/* line 38, ../scss/cats/_layout.scss */
-#pkmn_1 {
-  display: inline-block;
-  width: 48%;
-  height: 100%;
-  margin: 1%;
-}
-
-/* line 46, ../scss/cats/_layout.scss */
-#pkmn_2 {
-  display: inline-block;
-  width: 48%;
-  height: 100%;
-  margin: 1%;
-}
-
-/* line 54, ../scss/cats/_layout.scss */
-#output {
-  text-align: center;
+/* line 27, ../scss/cats/_module.scss */
+.output {
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px auto;
 }
-
-/* line 59, ../scss/cats/_layout.scss */
-.footernote {
-  margin: 20px auto;
+/* line 32, ../scss/cats/_module.scss */
+.output__text-box {
+  width: 100%;
+  margin: 2px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+/* line 38, ../scss/cats/_module.scss */
+.output__button {
+  width: 100%;
+  height: 80px;
+  margin: 2px;
+  border-radius: 10px;
 }
