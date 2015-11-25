@@ -17,7 +17,7 @@ Originally written in Java - I had it close to completetion but decided to re-wr
   * PHP could be implemented for modular markup
   * Experimenting with custom HTML elements
   
-  * Considering implementing [http://pokeapi.co/]Pokéapi
+  * Considering implementing [Pokéapi](http://pokeapi.co/)
   
   * Pokémon and modifier selectors functioning
   * Speed calculates correctly (except for above)
