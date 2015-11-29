@@ -1,17 +1,30 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		// babel: {
-		// 	options: {
-		// 		sourceMap: true,
-		// 		// presets: ['es2015']
-		// 	},
-		// 	dist: {
-		// 		files: {
-		// 			'js/app.js': 'js/_app.js'
-		// 		}
-		// 	}
-		// },
+		concat: {
+			dist: {
+				src: ['js/partials/*.js'],
+				dest: 'js/app.js'
+			}
+		},
+		babel: {
+			options: {
+				sourceMap: true,
+				presets: ['es2015']
+			},
+			dist: {
+				files: {
+					'js/pokespeedtier.js': 'js/app.js'
+				}
+			}
+		},
+		uglify: {
+			my_target: {
+			  files: {
+			    'js/pokespeedtier.min.js': ['js/pokespeedtier.js']
+			  }
+			}
+		},
 		compass: {
 			dist: {
 				options: {
@@ -36,10 +49,10 @@ module.exports = function(grunt) {
         	}
     	},
 		watch: {
-			options: {livereload: true},
+			options: { livereload: true },
 			css: {
-				files: [/*'js/*.js',*/ '**/*.scss','**/*.jade'],
-				tasks: [/*'babel',*/ 'compass','jade']
+				files: ['js/**/*.js', '**/*.scss','**/*.jade'],
+				tasks: ['uglify','concat', 'babel', 'compass','jade']
 			}
 		},
 		express:{
@@ -48,7 +61,7 @@ module.exports = function(grunt) {
 					port: 9000,
 					hostname: 'localhost',
 					bases: ['./'],
-					livereload:true
+					// livereload:true
 				}
 			}
 		},
@@ -64,7 +77,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-express');
 	grunt.loadNpmTasks('grunt-open');
-	// grunt.loadNpmTasks('grunt-babel');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-babel');
 	grunt.registerTask('server', ['express','open','watch']);
 	grunt.registerTask('default', ['server']);
 }
